@@ -36,7 +36,6 @@ streams it and spills to `data/processed/duckdb_tmp` if memory runs short).
 | `src/03_hit_metric.py` | Defines and validates the AAA Hit metric against box office |
 | `src/04_features.py` | Pre-greenlight features; every track record uses prior years only |
 | `src/05_model.py` | Baseline → LightGBM, out-of-time backtest, SHAP, simulator, slate scoring |
-| `src/06_report.py` | Writes `outputs/RESULTS_FOR_SLIDES.md` |
 | `run_all.py` | Runs 01–06 in order and logs to `outputs/run_log.txt` |
 
 ## Data sources
