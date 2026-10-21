@@ -22,18 +22,6 @@ streams it and spills to `data/processed/duckdb_tmp` if memory runs short).
 2. The `outputs/charts/` folder (11 PNGs), zipped.
 3. If anything fails: `outputs/run_log.txt`.
 
-## What title.principals changes
-
-| Area | Without principals | With principals |
-|---|---|---|
-| Q2 most popular actor | Wikipedia scrape, 124 US films + 6 curated | Every 2020 film in IMDb, all countries; Wikipedia kept as a cross-check |
-| Model features | Director + writer track record | + top-3 cast star power, lead actor record, producer record |
-| Model ablation | 4 steps | 5 steps: shows what cast & producers add on top of director/writer |
-| Upcoming slate | Directors only | + announced top-3 cast |
-
-Cast "star power" only counts films where the person was billed in the top 3, so uncredited
-extras in a blockbuster earn no star credit — the same trap the deck's Q2 slide warns about.
-
 ## Repository map
 
 | Path | What it does |
